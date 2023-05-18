@@ -5,28 +5,28 @@ To use the software, first install ROS2 Galactic on your Ubuntu 20.04 desktop en
 
 .. code-block:: console
 
-   $ sudo apt install software-properties-common
-   $ sudo add-apt-repository universe
-   $ sudo apt update && sudo apt install curl gnupg lsb-release
-   $ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-   $ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-   $ sudo apt update # update your apt repo caches
-   $ sudo apt install ros-galactic-desktop
+   sudo apt install software-properties-common
+   sudo add-apt-repository universe
+   sudo apt update && sudo apt install curl gnupg lsb-release
+   sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+   echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+   sudo apt update # update your apt repo caches
+   sudo apt install ros-galactic-desktop
 
 Then source the setup of ROS2 on bash by running the following commands:
 
 .. code-block:: console
 
-   $ source /opt/ros/galactic/setup.bash
-   $ echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
-   $ source ~/.bashrc
+   source /opt/ros/galactic/setup.bash
+   echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
+   source ~/.bashrc
 
 If you are using Zsh instead of bash, run the following commands to source the ROS2 setup:
 
 .. code-block:: console
 
-   $ echo "source /opt/ros/galactic/setup.zsh" >> ~/.zshrc
-   $ source ~/.zshrc
+   echo "source /opt/ros/galactic/setup.zsh" >> ~/.zshrc
+   source ~/.zshrc
 
 Run Some Examples
 """"
@@ -34,7 +34,7 @@ To verify that ROS2 Galactic has been installed properly run the following comma
 
 .. code-block:: console
 
-   $ ros2 run demo_nodes_cpp talker
+   ros2 run demo_nodes_cpp talker
 
 The output should confirm that the talker is successfully publishing messages:
 
@@ -49,7 +49,7 @@ In another terminal window, run the example Python listener
 
 .. code-block:: console
 
-   $ ros2 run demo_nodes_py listener
+   ros2 run demo_nodes_py listener
    
 The output should confirm that the listener is hearing the published messages:
 
@@ -74,7 +74,7 @@ UnrealEngine Setup
 
 .. code-block:: console
 
-   $ ./Setup.sh&& ./GenerateProjectFiles.sh&& make
+   ./Setup.sh&& ./GenerateProjectFiles.sh&& make
 
 The installation takes over an hour to finish.
 
