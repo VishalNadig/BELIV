@@ -71,7 +71,7 @@ UnrealEngine Setup
 
 .. code-block:: console
 
-   ./Setup.sh&& ./GenerateProjectFiles.sh&& make
+   ./Setup.sh && ./GenerateProjectFiles.sh && make
 
 The installation takes over an hour or two to finish. Might be slower if your laptop has lower end specs.
 
