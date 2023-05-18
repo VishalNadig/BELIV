@@ -65,4 +65,17 @@ If all the above steps worked and the listener node is printing messages to your
 UnrealEngine Setup
 """"
 
-Go to `Unreal Engine GitHub https://github.com/orgs/EpicGames/repositories'_
+Please visit: `Unreal Engine <https://www.unrealengine.com/en-US/ue-on-github>`_ for steps to get access to the UnrealEngine repository.
+Go to `Unreal Engine GitHub <https://github.com/EpicGames/UnrealEngine/tree/4.26>`_ and check if you can see the UnrealEngine Repository.
+Then click on the "Code" Button at the top right of the repository and click "Download as ZIP" to download the ZIP file into your local Ubuntu Desktop.
+After download is complete, Unzip the ZIP file by right clicking on it and clicking "Extract Here"
+After extraction, go in to the folder called UnrealEngine-4.26 folder, right click and open in terminal.
+Paste the following commands into the terminal
+
+.. code-block:: console
+
+   $ ./Setup.sh&& ./GenerateProjectFiles.sh&& make
+
+The installation takes over an hour to finish.
+
+
