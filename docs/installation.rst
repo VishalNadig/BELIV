@@ -81,4 +81,14 @@ UnrealEngine Setup
 
 The installation takes over an hour to finish.
 
+7) Add UnrealEngine to environment variables
+.. code-block:: console
+
+   gedit ~/.bashrc
+
+6) In the last line of the .bashrc file, write
+
+.. code-block:: console
+
+   export UE4_ROOT=~/UnrealEngine_4.26
 
