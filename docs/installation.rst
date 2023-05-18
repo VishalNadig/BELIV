@@ -73,7 +73,7 @@ UnrealEngine Setup
 
    ./Setup.sh&& ./GenerateProjectFiles.sh&& make
 
-The installation takes over an hour to finish.
+The installation takes over an hour or two to finish. Might be slower if your laptop has lower end specs.
 
 7) Add UnrealEngine to environment variables
 
