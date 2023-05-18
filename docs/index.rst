@@ -16,7 +16,7 @@ Contents
 .. toctree::
 
    about
-   homepage
+   installation
    getting started
    usage
    troubleshooting
