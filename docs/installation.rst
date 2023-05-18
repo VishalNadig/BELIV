@@ -67,8 +67,8 @@ UnrealEngine Setup
 
 1) Please visit: `Unreal Engine <https://www.unrealengine.com/en-US/ue-on-github>`_ for steps to get access to the UnrealEngine repository.
 2) Go to `Unreal Engine GitHub <https://github.com/EpicGames/UnrealEngine/tree/4.26>`_ and check if you can see the UnrealEngine Repository.
-3) Then click on the "Code" Button at the top right of the repository and click "Download as ZIP" to download the ZIP file into your local Ubuntu Desktop.
-4) After download is complete, Unzip the ZIP file by right clicking on it and clicking "Extract Here"
+3) Then click on the "Code" Button at the top right of the repository and click "Download ZIP" to download the ZIP file into your local Ubuntu Desktop.
+4) After download is complete, unzip the ZIP file by right clicking on it and clicking "Extract Here"
 5) After extraction, go in to the folder called UnrealEngine-4.26 folder, right click and open in terminal.
 6) Paste the following commands into the terminal
 
