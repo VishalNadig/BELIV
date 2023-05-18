@@ -1,20 +1,26 @@
-.. BELIV documentation master file, created by
-   sphinx-quickstart on Thu May 18 11:05:00 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to The BELIV Documentation!
+===================================
 
-Welcome to BELIV's documentation!
-=================================
+We use ROS2 Galactic to perform the gesture control for real time collaborative control of Turtlebot 4.
+
+Check out the :doc:`usage` section for further information, including
+how to :doc:`getting started` with the project. If you have everything setup and want a quick start, jump to https://hand-gesture-controlled-turtlebot4.readthedocs.io/en/latest/usage.html#quick-start
+
+.. note::
+
+   This project is under active development.
+
+Contents
+--------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   about
+   homepage
+   getting started
+   usage
+   troubleshooting
+   workflow for development
+   changelog
+   demo
+   about the authors
