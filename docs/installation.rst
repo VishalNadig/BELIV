@@ -82,6 +82,7 @@ UnrealEngine Setup
 The installation takes over an hour to finish.
 
 7) Add UnrealEngine to environment variables
+
 .. code-block:: console
 
    gedit ~/.bashrc
