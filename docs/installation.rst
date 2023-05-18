@@ -5,6 +5,7 @@ ROS2 Galactic Installation
 """"
 
 To use the software, first install ROS2 Galactic on your Ubuntu 20.04 desktop environment.
+
 .. code-block:: console
 
    sudo apt install software-properties-common
