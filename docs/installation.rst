@@ -93,11 +93,13 @@ CARLA Setup
 Downloading aria2 will speed up the following commands.
 
 .. code-block:: console
+
    sudo apt-get install aria2
 
 Install Ninja tool
 
 .. code-block:: console
+
    sudo apt install ninja-build
 
 Download CARLA 0.9.13 from here: `CARLA 0.9.13 Download <https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.13.tar.gz>`_
