@@ -104,7 +104,7 @@ Install Ninja tool
 
 Download CARLA 0.9.13 from here: `CARLA 0.9.13 Download <https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.13.tar.gz>`_ into your home directory.
 Extract the files by right clicking on it and clicking "Extract Here". 
-Go into the CARLA folder and get the latest assets by running
+Go into the CARLA folder and right click and open in terminal and get the latest assets by running
 
 .. code-block:: console
 
