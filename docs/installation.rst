@@ -123,8 +123,7 @@ The following command compiles the Python API client:
 
     make PythonAPI
  
- 
- 2. Compile the server:
+2. Compile the server:
 
 The following command compiles and launches Unreal Engine. Run this command each time you want to launch the server or use the Unreal Engine editor:
 
