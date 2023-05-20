@@ -96,18 +96,21 @@ Downloading aria2 will speed up the following commands.
 
    sudo apt-get install aria2
 
-Install Ninja tool
+Install Ninja tool and clang-10 required to build the PythonAPI
 
 .. code-block:: console
 
    sudo apt install ninja-build
+   sudo apt install clang-10
 
-Download CARLA 0.9.13 from here: `CARLA 0.9.13 Download <https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.13.tar.gz>`_ into your home directory.
-Extract the files by right clicking on it and clicking "Extract Here". 
-Go into the CARLA folder and right click and open in terminal and get the latest assets by running
+Clone the CARLA repository from here: `CARLA GitHub <https://github.com/carla-simulator/carla.git>`_ into your home directory.
+Then go into the carla repository that was just cloned and get the latest assets.
 
 .. code-block:: console
-
+   
+   cd ~/
+   git clone https://github.com/carla-simulator/carla.git
+   cd ~/carla
    ./Update.sh
 
 Build CARLA
