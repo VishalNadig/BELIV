@@ -110,3 +110,25 @@ Go into the CARLA folder and get the latest assets by running
 
    ./Update.sh
 
+Build CARLA
+""""
+
+1. Compile the Python API client:
+
+The Python API client grants control over the simulation. Compilation of the Python API client is required the first time you build CARLA and again after you perform any updates. After the client is compiled, you will be able to run scripts to interact with the simulation.
+
+The following command compiles the Python API client:
+
+.. code-block:: console
+
+    make PythonAPI
+ 
+ 2. Compile the server:
+
+The following command compiles and launches Unreal Engine. Run this command each time you want to launch the server or use the Unreal Engine editor:
+
+.. code-block:: console
+
+    make launch
+    
+The project may ask to build other instances such as UE4Editor-Carla.dll the first time. Agree in order to open the project. During the first launch, the editor may show warnings regarding shaders and mesh distance fields. These take some time to be loaded and the map will not show properly until then.
