@@ -3,9 +3,6 @@ Welcome to The BELIV Documentation!
 
 BELIV is working on making an Autonomous Electric Car
 
-Check out the :doc:`usage` section for further information, including
-how to :doc:`getting started` with the project. If you have everything setup and want a quick start, jump to https://hand-gesture-controlled-turtlebot4.readthedocs.io/en/latest/usage.html#quick-start
-
 .. note::
 
    This project is under active development.
