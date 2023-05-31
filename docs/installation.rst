@@ -63,47 +63,52 @@ UnrealEngine Setup
 """"
 
 1) Please visit: `Unreal Engine <https://www.unrealengine.com/en-US/ue-on-github>`_ for steps to get access to the UnrealEngine repository.
-2) Go to `Unreal Engine GitHub <https://github.com/EpicGames/UnrealEngine/tree/4.26>`_ and check if you can see the UnrealEngine Repository.
-3) Then click on the "Code" Button at the top right of the repository and click "Download ZIP" to download the ZIP file into your local /home folder.
-4) After download is complete, unzip the ZIP file by right clicking on it and clicking "Extract Here"
-5) After extraction, go in to the folder called UnrealEngine-4.26 folder, right click and open in terminal.
-6) Paste the following commands into the terminal
+2) Clone the `Unreal Engine For CARLA GitHub <https://github.com/CarlaUnreal/UnrealEngine>`_ and check if you can see the UnrealEngine Repository.
+
+.. code-block:: console
+   
+   cd ~/
+   git clone https://github.com/CarlaUnreal/UnrealEngine
+
+3) Then setup the UnrealEngine using the following commands:
 
 .. code-block:: console
 
    ./Setup.sh && ./GenerateProjectFiles.sh && make
+   mv ~/UnrealEngine ~/UnrealEngine-4.26
 
 The installation takes over an hour or two to finish. Might be slower if your laptop has lower end specs.
 
-7) Add UnrealEngine to environment variables
+4) Add UnrealEngine to environment variables
 
 .. code-block:: console
 
    gedit ~/.bashrc
 
-6) In the last line of the .bashrc file, write
+5) In the last line of the .bashrc file, write
 
 .. code-block:: console
 
-   export UE4_ROOT=~/UnrealEngine_4.26
+   export UE4_ROOT=~/UnrealEngine-4.26
 
-CARLA Setup
+Install and Build CARLA
 """"
 
-Downloading aria2 will speed up the following commands.
+1) Downloading aria2 will speed up the following commands.
 
 .. code-block:: console
 
    sudo apt-get install aria2
 
-Install Ninja tool and clang-10 required to build the PythonAPI
+2) Install Ninja tool and clang-10 required to build the PythonAPI and the important python libraries using:
 
 .. code-block:: console
 
    sudo apt install ninja-build
    sudo apt install clang-10
+   pip install --user setuptools && pip3 install --user -Iv setuptools==47.3.1 && pip install --user distro && pip3 install --user distro && pip install --user wheel && pip3 install --user wheel auditwheel
 
-Clone the CARLA repository from here: `CARLA GitHub <https://github.com/carla-simulator/carla.git>`_ into your home directory.
+3) Clone the CARLA repository found here: `CARLA GitHub <https://github.com/carla-simulator/carla.git>`_ into your home directory.
 Then go into the carla repository that was just cloned and get the latest assets.
 
 .. code-block:: console
@@ -113,18 +118,7 @@ Then go into the carla repository that was just cloned and get the latest assets
    cd ~/carla
    ./Update.sh
 
-Build CARLA
-""""
-
-Install some important python dependencies first with the following:
-
-.. code-block:: console
-
-
-   pip install --user setuptools && pip3 install --user -Iv setuptools==47.3.1 && pip install --user distro && pip3 install --user distro && pip install --user wheel && pip3 install --user wheel auditwheel
-
-
-1. Compile the Python API client:
+4) Compile the Python API client:
 
 The Python API client grants control over the simulation. Compilation of the Python API client is required the first time you build CARLA and again after you perform any updates. After the client is compiled, you will be able to run scripts to interact with the simulation.
 
@@ -134,7 +128,7 @@ The following command compiles the Python API client:
 
     make PythonAPI
  
-2. Compile the server:
+5) Compile the server:
 
 The following command compiles and launches Unreal Engine. Run this command each time you want to launch the server or use the Unreal Engine editor:
 
