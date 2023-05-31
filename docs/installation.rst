@@ -116,6 +116,14 @@ Then go into the carla repository that was just cloned and get the latest assets
 Build CARLA
 """"
 
+Install some important python dependencies first with the following:
+
+.. code-block:: console
+
+
+   pip install --user setuptools && pip3 install --user -Iv setuptools==47.3.1 && pip install --user distro && pip3 install --user distro && pip install --user wheel && pip3 install --user wheel auditwheel
+
+
 1. Compile the Python API client:
 
 The Python API client grants control over the simulation. Compilation of the Python API client is required the first time you build CARLA and again after you perform any updates. After the client is compiled, you will be able to run scripts to interact with the simulation.
