@@ -140,7 +140,9 @@ The following command compiles the Python API client:
 
     make PythonAPI
  
- 
+If xerces-c3.2.3 cannot be downloaded from  cannot be downloaded because of a 404 not found error then comment line "XERCESC_REPO=https://ftp.cixug.es/apache//xerces/c/3/sources/xerces-c-${XERCESC_VERSION}.tar.gz" in line 432 in Setup.sh and add "XERCESC_REPO=https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-${XERCESC_VERSION}.tar.gz" below it and run make PythonAPI command above again.
+
+
 5) Copy the carla-0.9.13-py3.7-linux-x86_64.egg file from BELIV/ to carla/PythonAPI/ folder.
 
 .. code-block:: console
