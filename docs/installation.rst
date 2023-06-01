@@ -200,11 +200,14 @@ The above command will open a seperate pygame window that will let you drive a c
 CARLA in Docker
 """"
 
+To install CARLA in docker environment you will need two things:
+   1) Docker
+   2) Nvdia-Container-Toolkit
+
 Docker Installation
 ''''
 
-To install CARLA in docker environment you will need two things:
-   1) Docker
+
    
    .. code-block:: console
    
@@ -253,6 +256,6 @@ To install CARLA in docker environment you will need two things:
    
    
       
-   
+
   
       
