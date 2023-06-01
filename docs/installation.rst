@@ -147,7 +147,7 @@ If xerces-c3.2.3 cannot be downloaded because of a 404 not found error then comm
 
    "XERCESC_REPO=https://ftp.cixug.es/apache//xerces/c/3/sources/xerces-c-${XERCESC_VERSION}.tar.gz"
 
-and add the following line below it and run make PythonAPI from command above again
+and add the following line below it and run "make PythonAPI" from above command again
 
 .. code-block:: console
 
