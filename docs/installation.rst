@@ -247,6 +247,7 @@ To install CARLA in docker environment you will need two things:
    Install nvidia-container-toolkit
    
    .. code-block:: console
+   
          sudo apt install -y nvidia-container-toolkit
       
    
