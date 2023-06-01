@@ -80,6 +80,7 @@ UnrealEngine Setup
    
    cd ~/
    git clone https://github.com/CarlaUnreal/UnrealEngine
+   cd ~/UnrealEngine
 
 3) Then setup the UnrealEngine using the following commands:
 
