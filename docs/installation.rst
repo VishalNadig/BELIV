@@ -111,12 +111,12 @@ Install and Build CARLA
 
    sudo apt-get install aria2
 
-2) Install Ninja tool and clang-10 required to build the PythonAPI and the important python libraries using:
+2) Install Ninja tool and clang-8 required to build the PythonAPI and the important python libraries using:
 
 .. code-block:: console
 
    sudo apt install ninja-build
-   sudo apt install clang-10
+   sudo apt install clang-8
    pip install --user setuptools && pip3 install --user -Iv setuptools==67.8.0 && pip install --user distro && pip3 install --user distro && pip install --user wheel && pip3 install --user wheel auditwheel
 
 3) Clone the CARLA repository found here: `CARLA GitHub <https://github.com/carla-simulator/carla.git>`_ into your home directory.
