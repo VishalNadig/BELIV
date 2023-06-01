@@ -64,10 +64,10 @@ If all the above steps worked and the listener node is printing messages to your
    
    Clone this repository before proceeding with next steps:
 
-.. code-block:: console
+   .. code-block:: console
 
-   cd ~/
-   git clone https://github.com/VishalNadig/BELIV.git
+      cd ~/
+      git clone https://github.com/VishalNadig/BELIV.git
 
 
 UnrealEngine Setup
