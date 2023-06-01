@@ -176,3 +176,21 @@ The following command compiles and launches Unreal Engine. Run this command each
     make launch
     
 The project may ask to build other instances such as UE4Editor-Carla.dll the first time. Agree in order to open the project. During the first launch, the editor may show warnings regarding shaders and mesh distance fields. These take some time to be loaded and the map will not show properly until then.
+
+8) Go to the Edit>Editor Preferences option on the top left of the UnrealEngine Editor and go to Performance option on the left hand side of the screen. Uncheck "Use Less CPU when in background" option and close the Editor Preferences window. Now hit the Play button on the top of the UnrealEngine editor and wait for the simulation to start.
+
+9) Open a new terminal by pressing Ctrl+Alt+T on the keyboard and navigate to the PythonAPI examples directory and run python examples:
+
+.. code-block:: console
+   cd ~/carla/PythonAPI/examples
+   python3 dynamic_weather.py
+
+This should change the weather in the simulation running in the UnrealEngine Editor. Weather effects such as cloudy and rain as well as change of day will occur.
+
+10) Open a new terminal by pressing Ctrl+Alt+T on the keyboard and navigate to the PythonAPI examples directory and run python examples:
+
+.. code-block:: console
+   cd ~/carla/PythonAPI/examples
+   python3 manual_control.py
+
+The above command will open a seperate pygame window that will let you drive a car around the simulation. The pygame window represents a small portion of the simulation running in the UnrealEngine editor. Press ESC on the terminal on which the python3 manual_control.py was run to close the pygame window.
