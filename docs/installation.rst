@@ -143,13 +143,14 @@ The following command compiles the Python API client:
 5) Copy the carla-0.9.13-py3.7-linux-x86_64.egg file from BELIV/ to carla/PythonAPI/ folder.
 
 .. code-block:: console
+
    cp ~/BELIV/carla-0.9.13-py3.7-linux-x86_64.egg ~/carla/PythonAPI/
 
 7) Edit the .bashrc file to export the above .egg file to the PYTHONPATH variable:
 
 .. code-block:: console
 
-    
+    echo "export PYTHONPATH=$PYTHONPATH:~/carla/PythonAPI/carla-0.9.13-py3.7-linux-x86_64.egg" >> ~/.bashrc
 
 8) Compile the server:
 
