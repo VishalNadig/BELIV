@@ -139,14 +139,15 @@ The following command compiles the Python API client:
 .. code-block:: console
 
     make PythonAPI
- 
-If xerces-c3.2.3 cannot be downloaded from  cannot be downloaded because of a 404 not found error then comment line 
+
+While the above make command is running if you encounter a 404 not found error while downloading xerces-c3.2.3 then do the following, if not then skip this and go to step 5.
+If xerces-c3.2.3 cannot be downloaded because of a 404 not found error then comment the following line found in line 432 in ~/carla/Util/BuildTools/Setup.sh
 
 .. code-block:: console
 
    "XERCESC_REPO=https://ftp.cixug.es/apache//xerces/c/3/sources/xerces-c-${XERCESC_VERSION}.tar.gz"
 
-in line 432 in Setup.sh and add the following line below it and run make PythonAPI from command above again
+and add the following line below it and run make PythonAPI from command above again
 
 .. code-block:: console
 
