@@ -128,6 +128,7 @@ Then go into the carla repository that was just cloned and get the latest assets
    cd ~/
    git clone https://github.com/carla-simulator/carla.git
    cd ~/carla
+   git checkout 0.9.13
    ./Update.sh
 
 4) Compile the Python API client:
