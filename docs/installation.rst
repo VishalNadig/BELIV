@@ -59,6 +59,17 @@ The output should confirm that the listener is hearing the published messages:
 
 If all the above steps worked and the listener node is printing messages to your console in sync with the talker node publishing them, ROS2 has been successfully installed.
 
+
+.. note:: 
+   
+   Clone this repository before proceeding with next steps:
+
+.. code-block:: console
+
+   cd ~/
+   git clone https://github.com/VishalNadig/BELIV.git
+
+
 UnrealEngine Setup
 """"
 
@@ -128,7 +139,19 @@ The following command compiles the Python API client:
 
     make PythonAPI
  
-5) Compile the server:
+ 
+5) Copy the carla-0.9.13-py3.7-linux-x86_64.egg file from BELIV/ to carla/PythonAPI/ folder.
+
+.. code-block:: console
+   cp ~/BELIV/carla-0.9.13-py3.7-linux-x86_64.egg ~/carla/PythonAPI/
+
+7) Edit the .bashrc file to export the above .egg file to the PYTHONPATH variable:
+
+.. code-block:: console
+
+    
+
+8) Compile the server:
 
 The following command compiles and launches Unreal Engine. Run this command each time you want to launch the server or use the Unreal Engine editor:
 
