@@ -183,6 +183,7 @@ The project may ask to build other instances such as UE4Editor-Carla.dll the fir
 9) Open a new terminal by pressing Ctrl+Alt+T on the keyboard and navigate to the PythonAPI examples directory and run python examples:
 
 .. code-block:: console
+
    cd ~/carla/PythonAPI/examples
    python3 dynamic_weather.py
 
@@ -191,6 +192,7 @@ This should change the weather in the simulation running in the UnrealEngine Edi
 10) Open a new terminal by pressing Ctrl+Alt+T on the keyboard and navigate to the PythonAPI examples directory and run python examples:
 
 .. code-block:: console
+
    cd ~/carla/PythonAPI/examples
    python3 manual_control.py
 
